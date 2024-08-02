@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  api:
+    build: ./go-api-service
+    ports:
+      - "3001:3001"
+
+  web:
+    build: ./web-app
+    ports:
+      - "80:80"
