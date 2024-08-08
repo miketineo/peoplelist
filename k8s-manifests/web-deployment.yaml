@@ -14,12 +14,12 @@ spec:
     spec:
       containers:
       - name: web
-        image: miketineo/web-app:latest
+        image: miketineo/peoplelist-web-app:2.0.0
         ports:
         - containerPort: 80
         env:
         - name: REACT_APP_API_URL
-          value: "http://192.168.86:30694"
+          value: "http://local.k8s.com:30014"
 ---
 apiVersion: v1
 kind: Service

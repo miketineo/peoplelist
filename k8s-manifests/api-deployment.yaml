@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: api
-        image: miketineo/go-api-service:latest
+        image: miketineo/peoplelist-go-api-service:2.0.0
         ports:
-        - containerPort: 3001
+        - containerPort: 30014
 ---
 apiVersion: v1
 kind: Service
@@ -27,6 +27,6 @@ spec:
     app: api
   ports:
   - protocol: TCP
-    port: 3001
-    targetPort: 3001
+    port: 30014
+    targetPort: 30014
   type: NodePort
