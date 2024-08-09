@@ -6,7 +6,7 @@ function App() {
 
     useEffect(() => {
         const apiUrl = process.env.REACT_APP_API_URL;
-        axios.get(`${apiUrl || 'http://local.k8s.com:30694'}/api/records`)
+        axios.get(`${apiUrl || 'http://api-local.miketineo.com'}/api/records`)
             .then(response => {
                 setRecords(response.data.users);
             })
