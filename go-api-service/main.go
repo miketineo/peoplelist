@@ -14,7 +14,7 @@ type User struct {
 }
 
 var users = []User{
-	{Name: "Miguel Tineo", Role: "Engineering Manager"},
+	{Name: "Miguel Tineo", Role: "Senior Engineering Manager"},
 	{Name: "Marta Vadilonga", Role: "UI/UX expert"},
 }
 
