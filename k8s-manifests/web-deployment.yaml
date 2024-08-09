@@ -19,7 +19,7 @@ spec:
         - containerPort: 80
         env:
         - name: REACT_APP_API_URL
-          value: "http://local.k8s.com:30014"
+          value: "http://local.k8s.com:30694"
 ---
 apiVersion: v1
 kind: Service
